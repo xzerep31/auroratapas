@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+<head>
+    {{ partial "head" .}}
+</head>
+<body class="body">
+    <main>
+        <section class="container">
+            <div class="container-text">
+               <a href="."><img src="imgs/Tarjeta.jpg" alt="" width="100%" height="100%"></a>
+            </div>
+            <div class="container-buttons">
+                <div class="grid-item">
+                    <a href="booking">
+                        <img class="icon" src="{{ .Site.Params.desktop.booking }}" alt="Reserva">
+                        <h1>Reservar</h1>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="menu">
+                        <img class="btn icon" src="{{ .Site.Params.desktop.menu }}" alt="Menu">
+                        <h1>Menu</h1>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="bar">
+                        <img class="icon" src="{{ .Site.Params.desktop.bar }}" alt="Bar">
+                        <h1>Bar</h1>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="container-address">
+                <p>
+                    <b>Lunes a miércoles:</b> De 12:00 pm a 12:00 am <br>
+                    <b>Jueves a domingo:</b> De 12:00 pm a 2:00 am <br>
+                    <b>Dirección:</b> Calle Real del Jigüe 83, entre Guaurabo y San José. <br>
+                    <b>Telefono:</b> (+53 5)446-1757 / (+53 5)4474452
+                </p>
+                
+            </div>
+            <div class="container-social">
+                <div class="social-btn flex-center"> 
+                   <a href="https://www.facebook.com/auroratapas">
+                    <img src="{{ .Site.Params.social.facebook }}" alt="" width="24" height="24"></a>
+                    <span class="follow-buttons">Me Gusta</span>
+                  
+                </div>
+                <div class="social-btn flex-center"> 
+                    <a href="https://www.instagram.com/aurora_tapas/">
+                        <img src="{{ .Site.Params.social.instagram }}" alt="" width="24" height="24"></a>
+                    <span class="follow-buttons">Síguenos</span>
+                </div>
+                <div class="social-btn flex-center"> 
+                    <a href="mailto:auroratapas@gmail.com">
+                    <img src="{{ .Site.Params.social.email }}" alt="" width="24" height="24"></a>
+                    <span class="follow-buttons">Correo Electrónico</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,6 +1,52 @@
 baseURL = 'http://auroratapas.com/'
-languageCode = 'es'
+languageCode = 'en-us'
 title = 'Aurora Tapas'
 description = 'una experiencia para compartir'
+defaultContentLanguage = "es"
 
+[params]
+    css = ["css/cover.css"]
+
+    author = "Pedro Victor Navarrete Alejo"
+
+    date_format = "Enero 2, 2024"
+
+    logo = "imgs/favicon.jpg"
+    logo_small = "imgs/favicon.png"
+    contact_url = "/booking"
+    home_url = "/home"
+    address = """<p class="text-uppercase"><strong>Aurora Tapas</strong>
+        <br>Calle Real del Jigüe No. 83
+        <br>Guarabo
+        <br>San José
+        <br>Trinidad
+        <br>
+        <strong>Cuba</strong>
+      </p>
+      """
+    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    copyright = "Copyright (c) 2024, AuroraTapas; Todos los derechos reservados."
+
+    formsubmit_action = "https://formsubmit.co/auroratapas@gmail.com"
+    contact_form_ajax = false
+
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+
+    enableGoogleMaps = true
+    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+[params.menu]
+
+[params.bar]
+
+[params.desktop]
+    booking = "imgs/booking1.png"
+    menu = "imgs/menu1.png"
+    bar = "imgs/bar1.png"
+
+[params.social]
+    facebook = "imgs/fibu.png"
+    instagram = "imgs/insta.png"
+    email = "imgs/mail.png"
 

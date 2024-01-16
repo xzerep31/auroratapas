@@ -1,0 +1,160 @@
+<div class="container-single" id="booking">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <section>
+
+                {{ .Content }}
+
+                {{ if isset .Site.Params "formsubmit_action" }}
+
+                <div class="heading">
+                  <h3>{{ i18n "contactForm" }}</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="{{ .Site.Params.formsubmit_action }}">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="name">{{ i18n "contactName" }}</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">{{ i18n "contactMail" }}</label>
+                                <input type="email" autocomplete="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+                            </div>
+                        </div>
+                        {{ if and .Site.Params.enableRecaptchaInContactForm .Site.Params.googleRecaptchaKey }}
+                        <div class="col-sm-12">
+                            <div class="g-recaptcha" data-sitekey="{{ .Site.Params.googleRecaptchaKey }}"></div>
+                            <br/>
+                        </div>
+                        {{ end }}
+
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>{{ i18n "contactSend" }}</button>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+
+                {{ end }}
+                <form action="{{ .Site.Params.formsubmit_action}}" method="POST">
+
+                    <div class="segment">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input class="form-control" name="Nombre" type="text" required="">
+                              <span class="form-label">Nombre</span>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input class="form-control" name="Correo" type="email" required="">
+                              <input type="hidden" name="_subject" value="Nueva Reserva!">
+                              <input type="hidden" name="_autoresponse" value="Gracias por Reservar!">
+                              <input type="hidden" name="_template" value="table">
+                              <span class="form-label">Correo Electrónico</span>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input class="form-control" name="WhatsApp" type="tel">
+                              <span class="form-label">WhatsApp (Móvil)</span>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="form-group input-not-empty">
+                              <span class="form-label">Habitaciones</span>
+                              <select class="form-control" name="Habitaciones" required="">
+                                  <option>1</option>
+                                  <option>2</option>
+                              </select>
+                              <span class="select-arrow"></span>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="form-group input-not-empty">
+                              <span class="form-label">Huéspedes</span>
+                              <select class="form-control" name="Huespedes" required="">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                              </select>
+                              <span class="select-arrow"></span>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input class="form-control" name="Entrada" type="date" required="">
+                              <span class="form-label">Fecha de Entrada</span>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input class="form-control" name="Salida" type="date" required="">
+                              <span class="form-label">Fecha de Salida</span>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <span class="form-label" for="">Otros Comentarios (Especifique hab. doble o triple)</span>
+                              <textarea class="form-control" name="Comentarios" style="height: 100px;"></textarea>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="form-btn">
+                      <button class="submit-btn">Reservar</button>
+                      </div>
+                  </form>
+                      <script>
+                          $('.form-control').each(function () {
+                              floatedLabel($(this));
+                          });
+                  
+                          $('.form-control').on('input', function () {
+                              floatedLabel($(this));
+                          });
+                  
+                          function floatedLabel(input) {
+                              var $field = input.closest('.form-group');
+                              if (input.val()) {
+                                  $field.addClass('input-not-empty');
+                              } else {
+                                  $field.removeClass('input-not-empty');
+                              }
+                          }
+                      </script>
+                  
+
+            </section>
+
+        </div>
+
+        <div class="col-md-4">
+
+       </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+
+{{ partial "map.html" . }}

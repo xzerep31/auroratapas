@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Edwardian Script ITC';
+    src: url("fonts/ITCEDSCR.TTF");
+}
+
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url("fonts/PinyonScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'ADLaM Display';
+    src: url("fonts/ADLaMDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url("fonts/Lobster-Regular.ttf");
+}
+
+:root {
+    --yinmn-blue: #1A5189ff;
+    --air-superiority-blue: #6DA2C2ff;
+    --eerie-black: #28251Aff;
+    --gray: #717B77ff;
+    --caf-noir: #3E2D16ff;
+    --celadon: #99e2b4ff;
+    --celadon-2: #88d4abff;
+    --mint: #78c6a3ff;
+    --mint-2: #67b99aff;
+    --zomp: #56ab91ff;
+    --zomp-2: #469d89ff;
+    --viridian: #358f80ff;
+    --pine-green: #248277ff;
+    --skobeloff: #14746fff;
+    --cover-text-color: var(--celadon);
+    --cover-border-text-color: var(--eerie-black);
+    --background-body: var(--gray);
+    --rich-black: #031120ff;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--rich-black) ;
+}
+
+.contact-message {
+    position: absolute;
+    width: 40vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: url("/imgs/screenshot.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.container-single{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: url("/imgs/screenshot_single.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container-text {
+    font-family: 'Edwardian Script ITC';
+    font-size: 28pt;
+    display: flex;
+    text-align: top;
+    height: 40%;
+    width: 30%;
+    position: absolute;
+}
+
+.container-buttons {
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    align-items: center;
+}
+
+.container-address {
+    font-family: 'ADLaM Display';
+    font-size: 12pt;
+    color: #fff;
+    position: absolute;
+    width: 60%;
+    top: 80%;
+}
+
+.container-social {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.follow_button {
+    padding: 5px 12px;
+    margin-left: 7px;
+    margin-right: 10px;
+    font-size: 14px;
+    background: rgba(41, 50, 172, 0.1);
+    color: rgba(34, 91, 109, 0.5);
+    border-radius: 3px;
+    border-width: 0;
+    border-style: solid;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-item {
+    float: left;
+    width: 15%;
+    text-align: center;
+    display: block;
+  }
+
+.grid-item:hover {
+    width: 20%;
+    border-radius: 15%;
+}
+
+.grid-item h1 {
+    color: #fff ;
+    font-size: 3vh;
+    font-family: 'lobster';
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+.header {
+    font-family: 'Edwardian Script ITC';
+    font-size: 24pt;
+    background: linear-gradient(to left,rgb(0 0 0 / 1), rgb(0 0 0 / .5), var(--rich-black));
+    color: #fff;
+    padding: .5px;
+}
+
+.heading {
+    font-family: 'Alphakind';
+    font-size: medium;
+    color: #fff;
+}
+
+.icon {
+    width: 70%;
+    height: 70%;
+}
+
+.icon-social img {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-social {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 33.33%;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 1s;
+  }
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+  }
+  
+  .social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: max-content;
+  }
