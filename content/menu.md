@@ -5,8 +5,6 @@ draft = false
 id = "menu"
 +++
 
-![Rollitos Aurora](/imgs/Rollitos_Aurora.JPG)
-
-
-
 Estamos muy orgullosos del hecho de que todas nuestras tapas, postres, salsas y marinadas están al 100% hechos desde cero en Aurora Tapas. Si tiene alguna pregunta o consulta sobre cualquiera de nuestros platos, no dude en contactarnos antes de su visita. Para cualquier requisito o intolerancia dietética, háganos conocer para que podamos asegurarnos de que su visita con nosotros sea lo más agradable posible.
+
+Consulte el menú completo [aquí](/menu/menu.pdf)

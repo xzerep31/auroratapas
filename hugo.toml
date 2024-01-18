@@ -5,9 +5,12 @@ description = 'Una experiencia para compartir'
 defaultContentLanguage = "es"
 
 [params]
-    css = ["css/cover.css"]
+    css = ["css/cover.css","css/owl.carousel.css","css/owl.theme.css","css/animate.css"]
+    js = ["js/owl.carousel.min.js"]
 
-    description = "Una experiencia para compartir"
+    defaultDescription = "Una experiencia para compartir"
+    defaultKeywords = ["Aurora", "Bar", "Tapas", "Aurora Tapas", "Bar de Tapas"]
+    
 
     author = "Pedro Victor Navarrete Alejo"
 
@@ -17,6 +20,8 @@ defaultContentLanguage = "es"
     logo_small = "imgs/favicon.png"
     contact_url = "/booking"
     home_url = "/home"
+    menu_url = "/menu"
+    bar_url = "/bar"
     address = """<p class="text-uppercase"><strong>Aurora Tapas</strong>
         <br>Calle Real del Jigüe No. 83
         <br>Guarabo
@@ -52,9 +57,14 @@ defaultContentLanguage = "es"
     instagram = "imgs/insta.png"
     email = "imgs/mail.png"
 
-[params.carrousel]
+[params.carouselMenu]
     items = 3
-    auto_play = true
+    auto_play = false
     slide_speed = 2000
     pagination_speed = 1000
 
+[params.carouselBar]
+    items = 3
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
