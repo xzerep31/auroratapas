@@ -1,11 +1,13 @@
 baseURL = 'http://auroratapas.com/'
 languageCode = 'en-us'
 title = 'Aurora Tapas'
-description = 'una experiencia para compartir'
+description = 'Una experiencia para compartir'
 defaultContentLanguage = "es"
 
 [params]
     css = ["css/cover.css"]
+
+    description = "Una experiencia para compartir"
 
     author = "Pedro Victor Navarrete Alejo"
 
@@ -28,7 +30,7 @@ defaultContentLanguage = "es"
     copyright = "Copyright (c) 2024, AuroraTapas; Todos los derechos reservados."
 
     formsubmit_action = "https://formsubmit.co/auroratapas@gmail.com"
-    contact_form_ajax = false
+    contact_form_ajax = true
 
     latitude = "-12.043333"
     longitude = "-77.028333"
@@ -49,4 +51,10 @@ defaultContentLanguage = "es"
     facebook = "imgs/fibu.png"
     instagram = "imgs/insta.png"
     email = "imgs/mail.png"
+
+[params.carrousel]
+    items = 3
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
 

@@ -3,11 +3,12 @@
 <head>
     {{ partial "head" .}}
 </head>
-<body class="body">
+<body>
     <main>
         <section class="container">
             <div class="container-text">
-               <a href="."><img src="imgs/Tarjeta.jpg" alt="" width="100%" height="100%"></a>
+                <h1><a href="/">{{ .Site.Title }}</a></h1>
+                <h2>{{ .Site.Params.Description }}</h2>
             </div>
             <div class="container-buttons">
                 <div class="grid-item">
