@@ -1,11 +1,3 @@
 weight: 1
-title: "Rollitos Aurora"
-description: >
-  <ul class="list-style-none">
-    <li>Ingredientes:</li>
-    <li>Jamón</li>
-    <li>Queso</li>
-    <li>Pepino</li>
-    <li>Mayonesa</li>
-  </ul>
+description: "Rollitos Aurora"
 image: "/imgs/carousel/menu/Rollitos_Aurora.JPG"

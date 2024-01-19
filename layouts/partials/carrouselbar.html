@@ -1,35 +1,33 @@
 {{ if default true .Site.Params.CarouselBar.enable }}
-{{ if isset .Site.Data "carousel" }}
-{{ if gt (len .Site.Data.carousel) 0 }}
+{{ if isset .Site.Data "bar" }}
+{{ if gt (len .Site.Data.bar) 0 }}
 <section>
-    <div class="home-carousel">
-        <div class="dark-mask"></div>
-        <div class="content-text">
-            <div class="owl-carousel"
+    <div>
+        <div></div>
+        <div>
+            <div class="slideshow-container"
                 data-autoplay="{{ default true .Site.Params.CarouselBar.auto_play }}"
                 data-slide-speed="{{ default 2000 .Site.Params.CarouselBar.slide_speed }}"
                 data-pagination-speed="{{ default 1000 .Site.Params.CarouselBar.pagination_speed }}">
-                {{ range sort .Site.Data.carousel "weight" }}
-                <div class="item">
+                {{ range sort .Site.Data.bar "weight" }}
+                <div class="mySlides fade">
                     {{ if .href }}
                     <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
                     {{ end }}
-                        <div class="row">
-                            <div class="col-sm-5 right">
-                                <h1>{{ .title | safeHTML }}</h1>
-                                {{ .description | safeHTML }}
-                            </div>
-                            <div class="col-sm-7">
-                                <img class="img-responsive" src="{{ .image }}" alt="">
-                            </div>
-                        </div>
-                    {{ if .href }}
-                    </a>
-                    {{ end }}
+                        <div class="numbertext"> {{ .weight }} </div>
+                         <img src="{{ .image }}" style="width: 100%;" alt="">
+                         <div class="text">{{ .description }}</div>
                 </div>
                 {{ end }}
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <!-- /.project owl-slider -->
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </div>
 </section>

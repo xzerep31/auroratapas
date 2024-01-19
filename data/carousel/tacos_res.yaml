@@ -1,9 +1,3 @@
 weight: 3
-title: "Tacos de Carne de Ropa Vieja"
-description: >
-  <ul class="list-style-none">
-    <li>Ingredientes:</li>
-    <li>Tortilla mejicana</li>
-    <li>Ropa vieja de res</li>
-  </ul>
+description: "Tacos de Ropa Vieja"
 image: "/imgs/carousel/menu/Tacos_Res.JPG"

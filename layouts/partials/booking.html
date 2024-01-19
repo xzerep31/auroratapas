@@ -2,7 +2,6 @@
     <section class="container-booking-form">
         <div class="content-text">
             {{ .Content }}
-        </div>
         <section class="form-group">
             <div class="heading">
                 <h3>{{ i18n "contactForm" }}</h3>
@@ -13,13 +12,17 @@
                     <input type="text" class="form-control" name="name" id="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="name">{{ i18n "contactName" }}</label>
-                    <input type="text" class="form-control" name="name" id="name" required>
+                    <label for="mail">{{ i18n "contactMail" }}</label>
+                    <input type="text" class="form-control" name="mail" id="mail" required>
                 </div>
-    
+                <div class="form-group">
+                    <label for="comments">{{ i18n "Comments" }}</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Reservar</button>    
             </form>
         </section>
-        
+    </div>
 
     </section>
 </div>
