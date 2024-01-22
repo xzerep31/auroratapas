@@ -1,9 +1,24 @@
-<div class="container-single" id="menu">
-  <section>
-    <div class="content-text">
-      {{ partial "carrouselmenu" .}}
-      {{ .Content }}
-    </div>
-  </section>
-  
+<div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                  <h2 class="block-title text-center">
+                    Tapas 
+                  </h2>
+              </div>
+              <div class="tab-menu">
+                <div class="offer-items">
+                  <img src="imgs/menu-tapas.png" alt="" class="img-responsive">
+                </div>
+              </div>   
+              <!-- end tab-menu -->
+          </div>
+          <!-- end col -->
+      </div>
+      <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+{{ partial "main_menu" .}}  
 

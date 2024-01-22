@@ -5,7 +5,7 @@ description = 'Una experiencia para compartir'
 defaultContentLanguage = "es"
 
 [params]
-    css = ["css/cover.css","css/bootstrap.min.css", "css/responsive.css", "css/colors/orange.css"]
+    css = ["css/cover.css","css/bootstrap.min.css", "css/responsive.css", "css/colors/green.css"]
     js = ["js/modernizer.js"]
 
     defaultDescription = "Una experiencia para compartir"
@@ -23,15 +23,9 @@ defaultContentLanguage = "es"
     home_url = "/home"
     menu_url = "/menu"
     bar_url = "/bar"
-    address = """<p class="text-uppercase"><strong>Aurora Tapas</strong>
-        <br>Calle Real del Jigüe No. 83
-        <br>Guarabo
-        <br>San José
-        <br>Trinidad
-        <br>
-        <strong>Cuba</strong>
-      </p>
-      """
+    address = "Calle Real del Jigüe No. 83 entre Guarabo y San José, Trinidad, Sancti Spiritus, Cuba"
+    phone = "(+53 5) 447-4452"
+    email = "auroratapas@gmail.com"
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
     copyright = "Copyright (c) 2024, AuroraTapas; Todos los derechos reservados."
 

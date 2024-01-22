@@ -1,6 +1,9 @@
 - id: home
   translation: "Inicio"
 
+- id: bookingTable
+  translation: "Reservar una mesa"
+
 - id: templateBy
   translation: "Plantilla creada por"
 
@@ -9,6 +12,9 @@
 
 - id: contactGoTo
   translation: "Ir a la página de contacto"
+
+- id: contactUs
+  translation: "Contáctenos"
 
 - id: contactAddrTitle
   translation: "Dirección"
@@ -60,6 +66,9 @@
 
 - id: aboutUs
   translation: "Sobre nosotros"
+
+- id: galleryPic
+  translation: "Galería de fotos"
 
 - id: newer
   translation: "Más reciente"
@@ -114,3 +123,27 @@
 
 - id: December
   translation: Diciembre
+
+- id: Monday
+  translation: Lunes
+
+- id: Tuesday
+  translation: Martes
+
+- id: Wednesday
+  translation: Miercoles
+
+- id: Thursday
+  translation: Jueves
+
+- id: Friday
+  translation: Viernes
+
+- id: Saturday
+  translation: Sábado
+
+- id: Sunday
+  translation: Domingo
+
+- id: openingHours
+  translation: Abierto
