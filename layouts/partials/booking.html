@@ -7,18 +7,15 @@
                 <h3>{{ i18n "contactForm" }}</h3>
             </div>
             <form action="{{ .Site.Params.formsubmit_action  }}" method="post">
-                <div class="form-group">
-                    <label for="name">{{ i18n "contactName" }}</label>
-                    <input type="text" class="form-control" name="name" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="mail">{{ i18n "contactMail" }}</label>
-                    <input type="text" class="form-control" name="mail" id="mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="comments">{{ i18n "Comments" }}</label>
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-                </div>
+                <label for="name">{{ i18n "contactName" }}</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+
+                <label for="mail">{{ i18n "contactMail" }}</label>
+                <input type="text" class="form-control" name="mail" id="mail" required>
+
+                <label for="comments">{{ i18n "Comments" }}</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
                 <button type="submit">Reservar</button>    
             </form>
         </section>

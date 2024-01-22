@@ -1,14 +1,27 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+     <!-- Site Icons -->
+     <link rel="shortcut icon" href="{{ .Site.Params.logo_small }}" type="image/x-icon" />
+     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+ 
     {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}
     {{ if isset .Params "tags" }}{{ range .Params.tags }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
     {{ if isset .Params "keywords" }}{{ range .Params.keywords }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
     {{ if gt (len $keywords) 0 }}
     <meta name="keywords" content="{{ delimit (uniq $keywords) ", " }}">
     {{ end }}
+    
     {{ $description_plain := default .Site.Params.defaultDescription .Description | markdownify | plainify }}
     <meta name="description" content="{{ $description_plain }}">
-    {{if .IsHome }}<title>{{ .Site.Title }}</title> {{ else }} <title>{{ .Site.Title }} - {{ .Title }}</title>{{end}}
+    
+    <title>{{ .Site.Title }}</title>
+    
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
     {{ partial "stylesheets" .}}
+    
     {{ partial "scripts" .}}

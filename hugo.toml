@@ -5,18 +5,19 @@ description = 'Una experiencia para compartir'
 defaultContentLanguage = "es"
 
 [params]
-    css = ["css/cover.css","css/owl.carousel.css","css/owl.theme.css","css/animate.css"]
-    js = ["js/owl.carousel.min.js"]
+    css = ["css/cover.css","css/bootstrap.min.css", "css/responsive.css", "css/colors/orange.css"]
+    js = ["js/modernizer.js"]
 
     defaultDescription = "Una experiencia para compartir"
     defaultKeywords = ["Aurora", "Bar", "Tapas", "Aurora Tapas", "Bar de Tapas"]
     
-
     author = "Pedro Victor Navarrete Alejo"
 
     date_format = "Enero 2, 2024"
 
-    logo = "imgs/favicon.jpg"
+    logo = "imgs/logo.png"
+    banner = "imgs/banner.jpg"
+    watermark = "imgs/fondo_auroratapas.png"
     logo_small = "imgs/favicon.png"
     contact_url = "/booking"
     home_url = "/home"
@@ -63,8 +64,3 @@ defaultContentLanguage = "es"
     slide_speed = 2000
     pagination_speed = 1000
 
-[params.carouselBar]
-    items = 3
-    auto_play = false
-    slide_speed = 2000
-    pagination_speed = 1000
