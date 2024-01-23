@@ -4,6 +4,12 @@
 - id: bookingTable
   translation: "Reservar una mesa"
 
+- id: reservations
+  translation: "Libro de Reservación"
+
+- id: bookingForm
+  translation: "Formulario"
+
 - id: templateBy
   translation: "Plantilla creada por"
 
@@ -30,6 +36,9 @@
 
 - id: contactMail
   translation: "Tu Email"
+
+- id: contactPhone
+  translation: "Tu Teléfono"
 
 - id: contactMessage
   translation: "Tu Mensaje"
@@ -147,3 +156,15 @@
 
 - id: openingHours
   translation: Abierto
+
+- id: todaySpecial
+  translation: Especialidad de la casa
+
+- id: Persons
+  translation: Cantidad de personas
+
+- id: date
+  translation: Fecha de reservación
+
+- id: socials
+  translation: Redes Sociales 
