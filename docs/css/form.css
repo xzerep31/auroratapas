@@ -1,0 +1,122 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+.contact-form-wrap{
+    padding: 45px 95px 65px;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: none;
+  background: #eff4f6;
+  padding: 10px 27px;
+  font-size: 12px;
+  height: 52px;
+  margin-bottom: 17px;
+}
+form textarea{
+  padding-top: 21px;
+  height: 190px;
+  margin-bottom: 25px;
+}
+
+input {
+  margin: 0;
+  margin-bottom: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.site-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  padding: 20px 30px;
+  min-width: 229px;
+  border: none;
+  background: #ffc515;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+form button {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  padding: 20px 30px;
+  min-width: 229px;
+  border: none;
+  background: #ffc515;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.col-1, .col-10, .col-11, .col-12, .col-2,
+.col-3, .col-4, .col-5, .col-6, .col-7, .col-8{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .contact-form-warp {
+      padding: 45px 30px 65px;
+    }
+  }
+
+@media (min-width: 768px) {
+    .col-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+}
