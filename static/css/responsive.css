@@ -87,6 +87,10 @@
 	}
 }
 @media (max-width: 992px) {
+	.abut-main p{
+		font-size: 14px;
+	}
+
 	.banner-text h1{
 		font-size: 50px;
 	}
@@ -151,6 +155,10 @@
 @media (max-width: 1000px) {}
 
 @media (min-width: 768px) {
+.abut-main p{
+		font-size: 14px;
+	}
+
 .gal-container .modal-dialog {
     width: 55%;
     margin: 50 auto;
@@ -172,11 +180,22 @@
   }
 }
 @media (max-width: 768px) {
+	.abut-main p{
+		font-size: 14px;
+	}
+
     .gal-container .modal-content{
         height:250px;
     }
+	.footer-logo img{
+		width: 100%;
+		height: auto;
+	}
 }
 @media (max-width: 768px) {
+	.abut-main p{
+		font-size: 14px;
+	}
 	.main-menu nav li a{
 		padding: 15px 0px;
 	}
@@ -252,7 +271,7 @@
 	.tab-menu .slick-arrow.slick-prev{
 		position:absolute;
 		top: -36px;
-		background:#e75b1e url(../images/back.png) no-repeat center;
+		background:#e75b1e url(../imgs/back.png) no-repeat center;
 		text-indent: -99999px;
 		border:none;
 		width: 32px;
@@ -261,14 +280,14 @@
 		background-position: 2px 4px;
 	}
 	.tab-menu .slick-arrow.slick-prev:hover{
-		background:#e75b1e url(../images/back_hover.png) no-repeat center;
+		background:#e75b1e url(../imgs/back_hover.png) no-repeat center;
 		background-position: 2px 4px;
 	}
 	.tab-menu .slick-arrow.slick-next{
 		position:absolute;
 		top: -36px;
 		right:0px;
-		background: #e75b1e url(../images/next.png) no-repeat center;
+		background: #e75b1e url(../imgs/next.png) no-repeat center;
 		text-indent: -99999px;
 		border:none;
 		width: 32px;
@@ -277,7 +296,7 @@
 		background-position: 7px 4px;
 	}
 	.tab-menu .slick-arrow.slick-next:hover{
-		background:#e75b1e url(../images/next_hover.png) no-repeat center;
+		background:#e75b1e url(../imgs/next_hover.png) no-repeat center;
 		background-position: 7px 4px;
 	}
 	.sf-team{
@@ -303,14 +322,36 @@
 	.footer-box-a, .footer-box-b, .footer-box-c, .footer-box-d{
 		margin-bottom:20px;
 	}
+
+	.footer-logo{
+		width: 100%;
+		height: auto;
+	}
+
 	.fixed-menu .main-menu nav li a{
 		padding: 10px 0px;
 	}
 }
 @media (max-width: 600px) {
-	
+	.abut-main p{
+		font-size: 14px;
+	}
+
+	.footer-logo img{
+		width: 100%;
+		height: auto;
+	}
 }
 @media (max-width: 480px) {
+	.abut-main p{
+		font-size: 14px;
+	}
+
+	.footer-logo img{
+		width: 100%;
+		height: auto;
+	}
+
 	.offer-item img{
 		width: 50%;
 	}

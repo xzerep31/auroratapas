@@ -164,7 +164,10 @@
   translation: Cantidad de personas
 
 - id: date
-  translation: Fecha de reservación
+  translation: Fecha de la reservación
+
+- id: time
+  translation: Hora de la reservación
 
 - id: socials
   translation: Redes Sociales 

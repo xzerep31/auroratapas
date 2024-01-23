@@ -8,7 +8,6 @@
                     {{ i18n "reservations" }}			
                 </h2>
                     </div>
-                    <h4 class="form-title">{{ i18n "bookingForm" }}</h4>
 
                     <form method="post" class="reservations-box" name="contactform" action="{{ .Site.Params.formsubmit_action }}">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -33,25 +32,22 @@
                             <div class="form-box">
                                 <select name="no_of_persons" id="no_of_persons" class="selectpicker">
                                     <option selected disabled>{{ i18n "Persons" }}</option>
-                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
                                 </select>
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="form-box">
-                                <input type="text" name="date-picker" id="date-picker" placeholder="Date" required="required" data-error="Se requiere que establezca una fecha para la reservación." />
+                                <input type="text" name="date-picker" id="date-picker" placeholder="{{ i18n "date" }}" required="required" data-error="Se requiere que establezca una fecha para la reservación." />
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="form-box">
-                                <input type="text" name="time-picker" id="time-picker" placeholder="Time" required="required" data-error="Se requiere que estabñezca una hora para su reserva." />
+                                <input type="text" name="time-picker" id="time-picker" placeholder="{{ i18n "time" }}" required="required" data-error="Se requiere que establezca una hora para su reserva." />
                             </div>
                         </div>
                         <!-- end col -->
